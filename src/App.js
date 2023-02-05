@@ -5,7 +5,7 @@ function App() {
   const [todoList, setToDoList] = useState([{task: "buying eggs 🥚", isCompleted: false}, {task:"study maths", isCompleted: false}, {task:"workout ", isCompleted: false}, {task:"coding 👨🏻‍💻", isCompleted: false}]);
   const [todo, setToDo] = useState("");
 
-  const update = (event) => {
+  let update = (event) => {
     setToDo(event.target.value);
   };
 
